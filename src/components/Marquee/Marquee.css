@@ -1,0 +1,46 @@
+.marquee-container {
+  background: linear-gradient(90deg, #f95b3e, #f89d1c);
+  background-size: 400% 400%;
+  animation: gradient-animation 10s ease-in-out infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  top: 75px;
+  height: 40px;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.marquee-container::-webkit-scrollbar {
+  display: none;
+}
+.marquee {
+  display: inline-block;
+  font-size: 16px;
+  color: #f4faff;
+  padding-left: 100%;
+  text-align: center;
+  animation: marquee 50s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* animate bg */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,61 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    220deg,
+    #f95b3e,
+    #1f54a3,
+    #2fa1e0,
+    #212ea0,
+    #f89d1c
+  );
+  background-size: 400% 400%;
+  animation: gradient-animation 20s ease-in-out infinite;
+  background-position: center;
+  color: #f4faff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* animate bg */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-text {
+  margin-top: 60px;
+  text-align: center;
+  max-width: 800px;
+}
+.hero-text h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+.hero-text h4 {
+  max-width: 700px;
+  margin: 10px auto 20px;
+  line-height: 1.4;
+  font-weight: normal;
+}
+.connect:hover {
+  background: transparent;
+  color: #f4faff;
+  outline: 1px solid #f4faff;
+}
+
+@media (max-width: 430px) {
+  .hero-text h1 {
+    font-size: 50px;
+  }
+}
+
