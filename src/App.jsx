@@ -17,7 +17,7 @@ const App = () => {
      <Marquee/>
      <Hero/>
      <div className="container">
-        <Title subTitle='Nos Services' title ='La solution offre les services suivants'/>
+        <Title subTitle='Nos Services' title = "L'application offre les services suivants"/>
         <Program/>
         <About />
         <Title subTitle='Témoignages' title ='Ce que disent nos clients'/>

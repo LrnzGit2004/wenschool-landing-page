@@ -8,12 +8,9 @@ const Hero = () => {
       {/* <Marquee/> */}
       <div className="hero-text">
         <h1>La digitalisation au service de l'éducation💯</h1>
-        <h4>
-          La solution WenSchool apporte une réelle innovation et de réels
-          avantages à la digitalisation du système éducatif camerounais. Elle se
-          positionne comme une porte d'entrée dans le digital grace à son
-          logiciel de gestion d'établissement, et bien d'autres services.
-        </h4>
+        {/* <h4>
+          La solution digitale pour suivre l'éducation de vos enfants sans vous déplacer
+        </h4> */}
         <a href="https://wenschool.wenix.net/" target="blank"><button className="btn connect">Se connecter →</button></a>
       </div>
     </div>

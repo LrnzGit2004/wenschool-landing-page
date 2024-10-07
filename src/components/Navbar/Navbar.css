@@ -67,5 +67,6 @@ nav ul li {
   }
   .hide-mobile-menu {
     right: -250px;
+    z-index: 11;
   }
 }
