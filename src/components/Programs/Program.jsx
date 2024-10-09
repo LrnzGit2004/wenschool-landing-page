@@ -1,37 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Program.css";
-import program_1 from "../../assets/program-1.png";
-import program_2 from "../../assets/program-2.png";
-import program_3 from "../../assets/program-3.png";
-import program_icon_1 from "../../assets/program-icon-1.png";
-import program_icon_2 from "../../assets/program-icon-2.png";
-import program_icon_3 from "../../assets/program-icon-3.png";
+import '../../assets/banner.png'
+import {programs} from '../../assets/assets'
+import banner from "../../assets/banner.png"
+
+
 
 const Program = () => {
+
+  const [selectedSection, setSelectedSection] = useState('general')
+
   return (
-    <div className="programs">
-      <div className="program">
-        <img src={program_1} alt="" />
-        <div className="caption">
-          <img src={program_icon_3} alt="" />
-          <p>Pour les établissements</p>
+    <>
+      <div className="container-program">
+        <div className="menu-program">
+          <img src={banner} alt="" width={500} />
+          <ul>
+            <li onClick={()=>setSelectedSection('general')}>Services généraux</li>
+            <li onClick={()=>setSelectedSection('etablissement')}>Pour les établissements</li>
+            <li onClick={()=>setSelectedSection('parent')}>Pour les parents</li>
+          </ul>
+          <button className="btn depliant">Télécharger le dépliant →</button>
+        </div>
+        <div className="discribe-content">
+          <div className="services-list">
+            <ul>
+            {programs[selectedSection].map((item, index) => (
+              <li key={index} className="custom-bullet">{item}</li>
+            ))}
+          </ul>
+          </div>
         </div>
       </div>
-      <div className="program">
-        <img src={program_2} alt="" />
-        <div className="caption">
-          <img src={program_icon_1} alt="" />
-          <p>Pour les élèves</p>
-        </div>
-      </div>
-      <div className="program">
-        <img src={program_3} alt="" />
-        <div className="caption">
-          <img src={program_icon_2} alt="" />
-          <p>Pour les parents</p>
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 

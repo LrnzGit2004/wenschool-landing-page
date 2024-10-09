@@ -1,44 +1,69 @@
-.programs {
-  margin: 80px auto;
-  width: 90%;
+.container-program {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.program img {
   width: 100%;
-  border-radius: 10px;
-  display: block;
+  height: 35vh;
 }
-.program {
-  flex-basis: 31%; /*Ajoute un espace entre les éléments*/
+.menu-program {
+  width: 30%;
+  padding-right:20px;
   position: relative;
 }
-.caption {
-  border-radius: 10px;
+.menu-program img {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(0, 15, 152, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #f4faff;
+  left: 500px;
+  top: 50px;
+  opacity: 30%;
+}
+.menu-program ul {
+  list-style: none;
+}
+.menu-program li {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color:white;
+  background: #f95b3e;
   cursor: pointer;
-  opacity: 0;
-  padding-top: 70%;
-  transition: 0.4s;
 }
-.caption img {
-  width: 60px;
-  margin-bottom: 10px;
+
+.discribe-content {
+  flex: 1;
+  padding-right: 20px;
+  background: #def4ff;
+  border-radius: 10px;
 }
-.program:hover .caption {
-  opacity: 1;
-  padding-top: 0;
+.services-list {
+  padding-left: 40px;
+}
+.services-list ul {
+  list-style: none;
+  
+}
+.services-list li {
+  padding-bottom: 5px;
+  
+}
+.services-list li:first-child {
+  padding-top: 10px;
+}
+
+.custom-bullet {
+  position: relative; 
+}
+
+.custom-bullet::before {
+  content: '◆'; 
+  color: #212ea0;
+  font-size: 17px;
+  position: absolute;
+  left: -20px; 
+}
+
+.depliant {
+  margin-top: 50px;
+  margin-left: 40px;
+  background: #212ea0 !important;
+  color: #def4ff !important;
 }
 
 /* responsive design */
