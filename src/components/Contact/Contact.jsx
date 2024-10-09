@@ -1,10 +1,11 @@
 import React from "react";
 import "./Contact.css";
 import msg_icon from "../../assets/msg-icon.png";
-import mail_icon from "../../assets/mail-icon.png";
-import phone_icon from "../../assets/phone-icon.png";
-import location_icon from "../../assets/location-icon.png";
 import white_arrow from "../../assets/white-arrow.png";
+import { IoMail } from "react-icons/io5";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -47,16 +48,20 @@ const Contact = () => {
         </p>
         <ul>
           <li>
-            <img src={mail_icon} alt="" />
-            lorenzoeric2004@gmail.com
+          <IoMail width={50} className="icon-contact"/>
+            castel.zanga@wenix.net
           </li>
           <li>
-            <img src={phone_icon} alt="" />
-            +237 655 83 48 69
+          <BsFillTelephoneFill width={50} className="icon-contact"/>
+            +237 655 83 48 69 / 672 91 18 47
           </li>
           <li>
-            <img src={location_icon} alt="" />
-            Kribi, Cameroun
+          <FaLocationDot width={50} className="icon-contact"/>
+            Kribi-Petit Paris, face CIME-Impôts, Cameroun.
+          </li>
+          <li>
+          <FaFacebook width={50} className="icon-contact "/>
+            <a href="https://www.facebook.com/profile.php?id=61561152725960" className="link-icon">Nous suivre sur facebook</a>
           </li>
         </ul>
       </div>

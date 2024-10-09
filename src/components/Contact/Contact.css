@@ -31,11 +31,14 @@
   margin: 20px 0;
 }
 
-.contact-col ul li img {
-  width: 25px;
+.contact-col ul li .icon-contact {
+  width: 20px;
   margin-right: 10px;
+  color: #212ea0;
 }
-
+.link-icon {
+  color: #212ea0;
+}
 .contact form input,
 .contact form textarea {
   display: block;

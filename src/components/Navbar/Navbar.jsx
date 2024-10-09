@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import "./Navbar.css";
 import logo_ws from "../../assets/logo_ws.jpg";
 import menu_icon from "../../assets/menu-icon.png";
+import logo from "../../assets/fav.jpg"
 import { RiContactsBook3Fill } from "react-icons/ri";
 
 const Navbar = () => {
@@ -21,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
-      <img src={logo_ws} alt="" className="logo" />
+      <img src={logo} alt="" className="logo" />
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
           <Link

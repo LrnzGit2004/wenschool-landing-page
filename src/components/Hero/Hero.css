@@ -2,21 +2,16 @@
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(
-    220deg,
-    #f95b3e,
-    #1f54a3,
-    #2fa1e0,
-    #212ea0,
-    #f89d1c
-  );
-  background-size: 400% 400%;
-  animation: gradient-animation 20s ease-in-out infinite;
+      rgba(31, 84, 163, 0.7),
+      rgba(33, 46, 160, 0.7)
+    ),
+    url("../../assets/baniere-fd.jpg");
+  background-size: cover;
   background-position: center;
   color: #f4faff;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 /* animate bg */
@@ -38,7 +33,7 @@
   max-width: 800px;
 }
 .hero-text h1 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 600;
 }
 .hero-text h4 {
@@ -47,16 +42,13 @@
   line-height: 1.4;
   font-weight: normal;
 }
-.connect{
+.connect {
   margin-top: 10px;
   font-weight: 500;
-  
 }
-
 
 @media (max-width: 430px) {
   .hero-text h1 {
     font-size: 50px;
   }
 }
-

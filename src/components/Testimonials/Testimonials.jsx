@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import "./Testimonial.css";
 import next_icon from "../../assets/next-icon.png";
 import back_icon from "../../assets/back-icon.png";
-import user_1 from "../../assets/user-1.png";
 import user_2 from "../../assets/user-2.png";
 import user_3 from "../../assets/user-3.png";
 import user_4 from "../../assets/user-4.png";
@@ -34,16 +33,14 @@ const Testimonials = () => {
           <li>
             <div className="slide">
               <div className="user-info">
-                <img src={user_1} alt="" />
+                <img src={user_2} alt="" />
                 <div>
-                  <h3>Lorryl Eric</h3>
-                  <span>Lorem, ipsum dolor.</span>
+                  <h3>Lorenzo SOBZE</h3>
+                  <span>React Frontend Developer</span>
                 </div>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                minima incidunt aliquam, quam corporis dignissimos officia
-                tenetur saepe inventore et veniam ullam, quae, sunt tempora?
+                Ayant moi meme travaillé sur le logiciel WenSchool et en tant que developpeur, je suis bien évidemment ravi de le proposer à la communauté éducative camerounaise notamment pour sa simplicité, et ses inombrables fonctionnalités.
               </p>
             </div>
           </li>
@@ -52,7 +49,7 @@ const Testimonials = () => {
               <div className="user-info">
                 <img src={user_2} alt="" />
                 <div>
-                  <h3>Lorenzo Sobze</h3>
+                  <h3>nana </h3>
                   <span>Lorem, ipsum dolor.</span>
                 </div>
               </div>

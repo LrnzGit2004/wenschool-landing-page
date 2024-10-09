@@ -66,9 +66,11 @@
 
 .depliant {
   margin-top: 50px;
-  margin-left: 40px;
+  margin-left: 30px;
   background: #212ea0 !important;
   color: #def4ff !important;
+  padding: 10px !important;
+  font-size: 15px !important;
 }
 
 /* responsive design */
