@@ -50,10 +50,9 @@
 .connect{
   margin-top: 10px;
   font-weight: 500;
+  
 }
-.connect:hover {
-  transform: scaleX(1.1);
-}
+
 
 @media (max-width: 430px) {
   .hero-text h1 {

@@ -1,27 +1,30 @@
 .container-program {
   display: flex;
   width: 100%;
-  height: 35vh;
+  height: auto;
 }
+
 .menu-program {
-  width: 30%;
-  padding-right:20px;
+  padding-right: 20px;
   position: relative;
 }
+
 .menu-program img {
   position: absolute;
-  left: 500px;
-  top: 50px;
+  left: 170%;
+  top: 0%;
   opacity: 30%;
 }
+
 .menu-program ul {
   list-style: none;
 }
+
 .menu-program li {
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  color:white;
+  color: white;
   background: #f95b3e;
   cursor: pointer;
 }
@@ -32,17 +35,19 @@
   background: #def4ff;
   border-radius: 10px;
 }
+
 .services-list {
   padding-left: 40px;
 }
+
 .services-list ul {
   list-style: none;
-  
 }
+
 .services-list li {
   padding-bottom: 5px;
-  
 }
+
 .services-list li:first-child {
   padding-top: 10px;
 }
@@ -69,11 +74,37 @@
 /* responsive design */
 
 @media (max-width: 650px) {
-  .programs {
+  .container-program {
     flex-direction: column;
   }
   .program {
     flex-basis: 100%;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  
+  .depliant {
+    margin-left: 0;
+    padding: 10px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .depliant {
+    margin-top: 20px;
+    font-size: 14px !important;
+    margin-bottom: 20px;
+  }
+  .container-program {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .menu-program img {
+    display: none;
   }
 }

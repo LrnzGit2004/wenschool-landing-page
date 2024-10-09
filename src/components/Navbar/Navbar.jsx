@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import "./Navbar.css";
-import logo_ws from "../../assets/logo_ws.png";
+import logo_ws from "../../assets/logo_ws.jpg";
 import menu_icon from "../../assets/menu-icon.png";
+import { RiContactsBook3Fill } from "react-icons/ri";
 
 const Navbar = () => {
   //Creeon la logique du changement de couleur de la NavBar
@@ -76,6 +77,7 @@ const Navbar = () => {
             className="btn"
           >
             Contactez-nous
+            <RiContactsBook3Fill />
           </Link>
         </li>
       </ul>
